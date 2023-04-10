@@ -1,0 +1,559 @@
+@charset "utf-8";
+*{
+  list-style-type: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+ 
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+/* <--------------------------------------------해더----> */
+header{
+  /* border: 2px solid red; */
+  /* overflow: hidden; */
+  width: 100%;
+  height: 4vw;
+  background: linear-gradient(to bottom,white,transparent);
+  color: #6b6968;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-family: 'Aboreto', cursive;
+  z-index: 9999;
+}
+
+.top{
+  /* border: 1px solid rgb(0, 255, 76); */
+  width: 100%;
+  height: 4vw;
+  line-height: 4vw;
+  z-index: 9999;
+}
+/* .top::before{
+  content: "";
+  background: linear-gradient(to bottom,white,transparent);
+  position: absolute;
+  top: 0;
+  height: 6vw;
+  width: 100%;
+} */
+.top:hover{
+  background-color: white;
+}
+.top .top_range{
+  /* border: 1px solid rebeccapurple; */
+  width: 80vw;
+  margin: 0 auto;
+  height: 6vw;
+  position: relative;
+}
+.top_range .home{
+  float: left;
+  padding-left: 5vw;
+}
+header .top nav{
+  float: right;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+header .top nav a{
+  /* margin: 0 1vw; */
+  font-size: 1.3vw;
+  font-weight: 600;
+  margin: 2em; 
+  transition: all 0.2s ease-in-out;
+}
+header .top nav a:hover{
+  border-bottom: 5px solid #da9364;
+  /* transform:translate(1vw , 1vw) */
+}
+
+
+/* <-----------------------------------------메인 홈 화면 ----> */
+.section{
+  overflow: hidden;
+}
+
+.content1{
+  /* border: 1px solid red; */
+  background-color: #fbefe7;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  color: #c76f35;
+}
+.content1 h2{
+  /* border: 1px solid red; */
+  font-size: 3vw;
+  line-height: 3vw;
+  z-index: 999;
+  position: absolute;
+  top: 12vw;
+  left: 24vw;
+  font-weight: 800;
+  font-family: 'Aboreto', cursive;
+}
+.content1 .main_center .main_pic{
+  position: absolute;
+  top: 15vw;
+  left: 42vw;
+  width: 15vw;
+  /* z-index: 2; */
+}
+.main_center #center_text{
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 38vw;
+  left: 42vw;
+  width: 15vw;
+  font-size: 1vw;
+  color: #da9364;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content1 #center_text h4:nth-child(1){
+  /* border: 1px solid red; */
+  text-align: left;
+  margin-bottom: 10px;
+}
+.content1 #center_text h4:nth-child(2){
+  /* border: 1px solid red; */
+  text-align: right;
+  margin-top: -1vw;
+}
+.main_line img:first-child{
+  /* border: 1px solid red; */
+  position: absolute;
+  left: -15vw;
+  top: 10vw;
+}
+.main_line img:nth-child(2){
+  /* border: 1px solid red; */
+  width: 10vw;
+  position: absolute;
+  top: 25vw;
+  left: 35vw;
+}
+.main_line img:nth-child(3){
+  /* border: 1px solid red; */
+  width: 15vw;
+  position: absolute;
+  top: 10vw;
+  right: 30vw;
+}
+.main_line img:nth-child(4){
+  /* border: 1px solid red; */
+  width: 35vw;
+  position: absolute;
+  top: 10vw;
+  right: -10vw;
+}
+
+
+/* <----------------------------------------소개 부분------> */
+.center_back{
+  position: relative;
+  color: #fbefe4;
+  
+}
+.center_back h3{
+  position: absolute;
+  top: 2.6vw;
+  right: 0;
+  color: #f8e1cf;
+  opacity: 0.3;
+  font-size: 5vw;
+  font-family: 'Galada', cursive;
+}
+
+.about{
+  /* border: 2px solid hotpink; */
+  width: 80vw;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  color: #6b6968;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about_img {
+  /* border: 1px solid green; */
+  position: absolute;
+  top: 15vw;
+  left: 2vw;
+  text-align: center;
+}
+.about_img img{
+  width: 10vw;
+}
+.about_img p:first-child{
+  font-weight: 900;
+}
+.about_img p:nth-child(2){
+  /* border: 2px solid red; */
+  font-size: 1.5vw;
+  color: #da9364;
+  font-weight: 400;
+  margin-bottom: 0.7vw;
+}
+.about_img :nth-child(3){
+  font-size: 1vw;
+  font-weight: 300;
+}
+
+.about_box1{
+  /* border: 2px solid rgb(0, 255, 34); */
+  width: 30vw;
+  height: 30vw;
+  position: absolute;
+  top: 15vw;
+  right: 25vw;
+}
+.about h2{
+  font-size: 1.5vw;
+  color: #da9364;
+  font-weight: 600;
+  margin-bottom: 1vw;
+}
+.about p span{
+  font-size: 1vw;
+  color: #232322;
+  margin-left: 1vw;
+}
+.about_experience{
+  /* border: 1px solid blue; */
+  margin-bottom: 5vw;
+}
+.about_skill{
+  /* border: 1px solid blue; */
+
+}
+.about_skill .skill_ability{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1vw;
+}
+.about_skill p{
+  font-size: 1.2vw;
+  font-weight: 600;
+  line-height: 3vw;
+}
+.about_skill .skill_ability h4{
+  /* border: 1px solid red; */
+  background-color: #fbefe7;
+  box-shadow: 4px 4px 4px hsl(9deg 0% 0% / 0.38);
+  text-align: center;
+  line-height: 3vw;
+  width: 3vw;
+  height: 3vw;
+  margin: 0 0.5vw;
+  border-radius: 50%;
+
+}
+.about_box2{
+  /* border: 2px solid rgb(0, 255, 34); */
+  width: 25vw;
+  height: 30vw;
+  position: absolute;
+  top: 15vw;
+  right: 0vw;
+}
+.about_license{
+  /* border: 1px solid blue; */
+  margin-bottom: 7vw;
+}
+.about_personality{
+  /* border: 1px solid blue; */
+  position: relative;
+  height: 20vw;
+}
+.about_personality .mbti{
+  position: absolute;
+  top: 5vw;
+  left: 10vw;
+}
+.about_personality img:nth-child(3){
+  position: absolute;
+  top: 10vw;
+  left: 2vw;
+  /* border: 1px solid red; */
+}
+.about_personality img:nth-child(4){
+  position: absolute;
+  /* border: 1px solid red; */
+  top: 5vw;
+  left: 0;
+}
+.about_personality img:nth-child(5){
+  position: absolute;
+  /* border: 1px solid red; */
+  top: 5vw;
+  right: 0vw;
+}
+.about_page p{
+  font-weight: 600 ;
+  font-size: 20px;
+  margin-bottom: 10px;
+
+
+}
+
+/* <--------------------------------앱 / 웹 리뉴얼 부분 ----------------> */
+
+.section:nth-child(3){
+  background-color: #fdf9f5;
+  position: relative;
+  /* text-align: center; */
+}
+.section:nth-child(3) h2{
+  position: absolute;
+  /* position: fixed; */
+  top: 2.6vw;
+  left: 0;
+  color: #f8e1cf;
+  opacity: 0.3;
+  font-size: 5vw;
+  font-family: 'Galada', cursive;
+}
+.back_0{
+  position: absolute;
+  bottom: -70vw;
+  left: 0;
+  /* border: 1px solid red; */
+  width: 120%;
+
+}
+.slide{
+  /* border: 2px solid hotpink; */
+  width: 50vw;
+  height: 80%;
+  position: relative;
+}
+.slide_page{
+  /* border: 10px solid red; */
+  position: absolute;
+  width: 60%;
+  height: 70%;
+  transform: translate(-50% , -50%);
+  top: 55%;
+  left: 50%;
+}
+.title_name{
+  position: absolute;
+  font-size: 1.5vw;
+  left: 2.8vw;
+  color: #da9364;
+}
+.renewl_box{
+  /* border: 5px solid green; */
+  position: absolute;
+  left: 0vw;
+  top: 8vw;
+  width: 30vw;
+  height: 20vw;
+}
+.renewl_box h3{
+  color: #c76f35;
+  font-size: 2vw;
+  margin-bottom: 1vw;
+  font-weight: 600;
+  font-style: italic;
+}
+.renewl_box h4{
+  color: #6b6968;
+  font-size: 1vw;
+  font-weight: 600;
+  word-spacing:1vw;
+  /* position: absolute; */
+  left: 3vw;
+  margin-bottom: 2vw;
+  /* margin-left: 2vw; */
+  /* border: 1px solid red; */
+}
+.renewl_box p{
+  /* position: absolute; */
+  color: #6b6968;
+  font-size: 1vw;
+}
+.renewl_box button{
+  background-color: #ecdacd;
+  border: 0px;
+  width: 8vw;
+  height: 2vw;
+  text-align: center;
+  line-height: 2vw;
+  display: inline-block;
+  font-size: 1vw;
+  margin-right: 1vw;
+  z-index: 2;
+  overflow: hidden;
+  margin-top: 2vw;
+  position: relative;
+}
+.renewl_box button::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0px;
+  background-color: #c76f35;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  /* transform: scale(0,1); */
+  transform:translateX(100%) ;
+  transition: transform 0.35s;
+}
+
+.renewl_box button:hover::after{
+  transform:  scale(1 , 1);
+}
+.renewl_box button:hover{
+  color: #ecdacd;
+  z-index: 999;
+}
+.buttun_text{
+  position: relative;
+  z-index: 2;
+  color: #c76f35;
+  transition: 0.35s;
+}
+.renewl_box button:hover .buttun_text{
+  color: #ecdacd;
+}
+.remeal_img {
+  /* border: 1px solid green; */
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  top: 0;
+  right: 0;
+}
+.mock_up{
+  width: 35vw;
+}
+.mock_up_ai{
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 15vw;
+  right: -6vw;
+  width: 11vw;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-button-prev::after{
+  /* border: 1px solid red; */
+  position: absolute;
+  left: 10vw;
+  color: #c76f35;
+}
+.swiper-pagination{
+  border: 1px solid red;
+}
+
+/* <------------마지막 컨텍 파일-------------> */
+.section:nth-child(4){
+  background-color: #f8e1cf;
+}
+.last{
+  /* border: 1PX solid red; */
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  color: #232322;
+  /* background-color: #fdf9f5; */
+}
+.contact{
+  /* border: 10px solid hotpink; */
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0vw;
+  left:0vw;
+}
+.contact h2{
+  font-size: 9vw;
+  line-height: 9vw;
+  
+}
+.contact h2:nth-child(1){
+  position: absolute;
+  left: 4vw;
+  top: 17vw;
+  /* border: 1px solid green; */
+  z-index: 9999;
+  font-family: 'Aboreto', cursive;
+  /* animation: slide 2s ease-out; */
+}
+.section.active .contact h2:nth-child(1){
+  animation: slide 2s ease-out;
+}
+@keyframes slide{
+  from{
+    left: -10vw;
+    opacity: 0;
+
+  }
+  to{
+    left: 4vw;
+    opacity: 1;
+  }
+}
+.contact h2:nth-child(2){
+  position: absolute;
+  top: 20vw;
+  right: 1vw;
+   font-family: 'Aboreto', cursive;
+}
+.section.section.active .contact h2:nth-child(2){
+  animation: slide2 2s ease-out;
+}
+@keyframes slide2{
+  from{
+    right: -10vw;
+    opacity: 0;
+
+  }
+  to{
+    right: 1vw;
+    opacity: 1;
+  }
+}
+.door img{
+  width: 20vw;
+  position: absolute;
+  top: 10%;
+  left: 37%;
+}
+.last_list{
+  /* border: 2px solid green; */
+  position: absolute;
+  top: 36vw;
+  width: 100%;
+}
+.last_list ul li{
+  font-size: 1vw;
+  border-bottom: 3px solid #c76f35;
+  height: 3vw;
+  line-height: 3vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+footer{
+  position: absolute;
+  bottom: 2vw;
+  left: 33vw;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
